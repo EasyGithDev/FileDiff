@@ -41,7 +41,7 @@ function write($handle, array $data, string $sep): void
     fputcsv($handle, $data, $sep);
 }
 
-do {
+while(true) {
 
     $pos1 = ftell($f1);
     $pos2 = ftell($f2);
@@ -86,7 +86,7 @@ do {
         write($f3, $data2, $sep);
         read($f2, $sep);
     }
-} while (!(feof($f1) && feof($f2)));
+}
 
 fclose($f1);
 fclose($f2);
