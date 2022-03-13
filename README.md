@@ -1,12 +1,14 @@
 # FileDiff
 
+## Project display
+
 Simple PHP script to implement a difference between two files.
 
 Consider a file "A" and a file "B" sorted. 
 A "C" file will contain the new lines. 
 A "D" file will contain the deleted lines.
 
-For example in file A
+For example in file A :
 
 ```
 A
@@ -44,4 +46,10 @@ In file D
 
 ```
 A
+```
+
+## Project execution
+
+```sh
+php diff.php 
 ```
